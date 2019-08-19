@@ -17,3 +17,8 @@ filetype indent on
 " Decimal Increment
 :set nrformats=
 
+" Save as..
+function! s:newfile(title)
+  execute ":f ~/Documents/notes/".strftime('%Y-%m-%d-%H-%M-%S').a:title.".txt"
+endfunction
+nnoremap <Leader>nf :<C-u>call <SID>newfile("_")<Left><Left>
