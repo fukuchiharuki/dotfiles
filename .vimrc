@@ -22,4 +22,4 @@ filetype indent on
 function! s:newfile(title)
   execute ":f ~/Documents/vim-note/".strftime('%Y-%m-%d-%H-%M-%S').a:title.".txt"
 endfunction
-nnoremap <Leader>nf :<C-u>call <SID>newfile("_")<Left><Left>
+nnoremap <Leader>n :<C-u>call <SID>newfile("_")<Left><Left>
