@@ -1,4 +1,5 @@
 " Regular Settings
+let mapleader = "\<Space>"
 :set noswapfile
 :set nobackup
 :set undodir=~/.vim/undo
