@@ -20,6 +20,6 @@ filetype indent on
 
 " Save as..
 function! s:newfile(title)
-  execute ":f ~/Documents/vim-note/".strftime('%Y-%m-%d-%H-%M-%S').a:title.".txt"
+  execute ":f ~/vim-note/".strftime('%Y-%m-%d-%H-%M-%S').a:title.".txt"
 endfunction
 nnoremap <Leader>n :<C-u>call <SID>newfile("_")<Left><Left>
