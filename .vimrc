@@ -18,6 +18,9 @@ filetype indent on
 " Decimal Increment
 :set nrformats=
 
+" Encoding
+:set encoding=utf-8
+
 " Save as..
 function! s:newfile(title)
   execute ":f ~/vim-note/".strftime('%Y%m%dT%H%M%S').a:title.".md"
