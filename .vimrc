@@ -21,6 +21,9 @@ filetype indent on
 " Encoding
 :set encoding=utf-8
 
+" Disable beep
+:set visualbell t_vb=
+
 " Save as..
 function! s:newfile(title)
   execute ":f ~/vim-note/".strftime('%Y%m%dT%H%M%S').a:title.".md"
